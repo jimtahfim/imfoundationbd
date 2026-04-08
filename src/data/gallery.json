@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "url": "/images/relief.png",
+    "caption": "বন্যা দুর্গতদের মাঝে ত্রাণ বিতরণ"
+  },
+  {
+    "id": 2,
+    "url": "/images/dawah.png",
+    "caption": "কুরআন বিতরণ কর্মসূচি"
+  },
+  {
+    "id": 3,
+    "url": "/images/edu.png",
+    "caption": "মেধাবী শিক্ষার্থীদের মাঝে শিক্ষাসামগ্রী বিতরণ"
+  },
+  {
+    "id": 4,
+    "url": "/images/health.png",
+    "caption": "ফ্রি মেডিকেল ক্যাম্প"
+  },
+  {
+    "id": 5,
+    "url": "/images/food.png",
+    "caption": "এতিমখানায় খাবার বিতরণ"
+  },
+  {
+    "id": 6,
+    "url": "/images/sewing.png",
+    "caption": "সেলাই মেশিন বিতরণ"
+  }
+]

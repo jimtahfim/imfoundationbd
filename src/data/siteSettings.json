@@ -1,0 +1,24 @@
+{
+  "siteName": "Ikramul Muslimin Foundation",
+  "tagline": "মানবতার সেবায় একটি বিশ্বস্ত নাম",
+  "contact": {
+    "phone": "+8801714442745",
+    "whatsapp": "+8801714442745",
+    "email": "imfoundationmbd@gmail.com",
+    "address": "মেহেরপুর, বাংলাদেশ",
+    "workingHours": "সকাল ১০টা - রাত ৮টা"
+  },
+  "socialUrls": {
+    "facebook": "https://facebook.com",
+    "youtube": "https://youtube.com",
+    "twitter": "https://twitter.com",
+    "telegram": "https://t.me",
+    "whatsapp": "https://wa.me"
+  },
+  "overallVideo": {
+    "thumbnailUrl": "/images/video_thumb.png",
+    "videoUrl": "https://www.youtube.com/embed/buBvqw6G3WU?si=b9PvhXTkyQElY4uY",
+    "title": "আমাদের সামগ্রিক কার্যক্রম",
+    "description": "ইকরামুল মুসলিমিন ফাউন্ডেশন মানুষের মৌলিক অধিকার নিশ্চিত করতে, শিক্ষা, চিকিৎসা ও জরুরি ত্রাণ সহায়তা প্রদান করে আসছে।"
+  }
+}

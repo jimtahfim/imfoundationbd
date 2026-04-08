@@ -1,0 +1,24 @@
+/* Activities.css */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.6rem 1.5rem;
+  border-radius: 99px;
+  border: 1px solid var(--c-emerald);
+  background: transparent;
+  color: var(--c-deep-green);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--smooth);
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background: var(--c-emerald);
+  color: white;
+}

@@ -1,0 +1,222 @@
+/* Home.css */
+.section-light {
+  background-color: var(--c-bg-subtle);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 968px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+}
+@media (max-width: 480px) {
+  .stats-grid { grid-template-columns: 1fr; }
+}
+
+/* Values */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.value-card {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--smooth);
+  border: 1px solid var(--c-bg-subtle);
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.vc-icon {
+  width: 70px;
+  height: 70px;
+  background-color: var(--c-soft-mint);
+  color: var(--c-emerald);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.value-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.value-card p {
+  color: var(--c-text-muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 968px) {
+  .values-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .values-grid { grid-template-columns: 1fr; }
+}
+
+/* Activities */
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 968px) {
+  .activities-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .activities-grid { grid-template-columns: 1fr; }
+}
+
+/* Support Section */
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.support-card {
+  background: white;
+  border: 1px solid var(--c-bg-subtle);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-sm);
+}
+
+.support-card.primary {
+  grid-column: span 3;
+  background: var(--c-deep-green);
+  color: white;
+  text-align: left;
+  flex-direction: row;
+  align-items: center;
+  padding: 3rem;
+}
+
+.support-card.primary h3 {
+  color: var(--c-gold);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.support-card.primary p {
+  color: var(--c-soft-mint);
+  font-size: 1.1rem;
+  max-width: 600px;
+}
+
+.support-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.support-card p {
+  color: var(--c-text-muted);
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+@media (max-width: 968px) {
+  .support-card.primary {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .support-grid { grid-template-columns: 1fr; }
+  .support-card.primary { grid-column: auto; }
+}
+
+/* Donation Funds */
+.funds-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.fund-card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--c-emerald);
+}
+
+.fund-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.fund-card p {
+  font-size: 0.9rem;
+  color: var(--c-text-muted);
+  margin-bottom: 1rem;
+}
+
+.btn-link {
+  color: var(--c-emerald);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: var(--smooth);
+}
+.btn-link:hover {
+  color: var(--c-deep-green);
+}
+
+@media (max-width: 1024px) {
+  .funds-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .funds-grid { grid-template-columns: 1fr; }
+}
+
+/* Video Section */
+.video-section {
+  background-color: var(--c-off-white);
+}
+
+.video-container {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--c-soft-mint);
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #000;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}

@@ -1,0 +1,141 @@
+/* Hero.css */
+.hero-section {
+  position: relative;
+  padding: 6rem 0;
+  background-color: var(--c-soft-mint);
+  overflow: hidden;
+}
+
+.hero-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(#10b981 1px, transparent 1px);
+  background-size: 30px 30px;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title span {
+  color: var(--c-emerald);
+  display: block;
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  color: var(--c-text-muted);
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-btn {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+
+.hero-image-wrapper {
+  position: relative;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+  object-fit: cover;
+  height: 450px;
+}
+
+.hero-stat-float {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.stat-float-icon {
+  background: var(--c-soft-mint);
+  padding: 0.8rem;
+  border-radius: 50%;
+  display: flex;
+}
+
+.stat-float-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-float-text strong {
+  font-size: 1.2rem;
+  color: var(--c-deep-green);
+  line-height: 1;
+}
+
+.stat-float-text span {
+  font-size: 0.85rem;
+  color: var(--c-text-muted);
+}
+
+@media (max-width: 968px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 3rem;
+  }
+  
+  .hero-text {
+    margin: 0 auto;
+  }
+  
+  .hero-cta {
+    justify-content: center;
+  }
+  
+  .hero-title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .hero-cta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .hero-img {
+    height: 300px;
+  }
+}

@@ -1,0 +1,159 @@
+/* Header.css */
+.header-wrapper {
+  position: relative;
+  z-index: 1000;
+}
+
+.top-banner {
+  background-color: var(--c-deep-green);
+  color: var(--c-soft-mint);
+  font-size: 0.85rem;
+  padding: 0.5rem 0;
+}
+
+.top-banner-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-info {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.hidden-mobile {
+  display: flex;
+}
+
+@media (max-width: 640px) {
+  .hidden-mobile { display: none; }
+}
+
+.main-nav {
+  position: sticky;
+  top: 0;
+  background-color: var(--c-bg-light);
+  transition: var(--smooth);
+  border-bottom: 1px solid var(--c-soft-mint);
+  z-index: 1000;
+}
+
+.main-nav.scrolled.shadow {
+  box-shadow: var(--shadow-md);
+  border-bottom: none;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.logo-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-icon {
+  background: var(--c-emerald);
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--c-deep-green);
+}
+.brand-accent {
+  color: var(--c-emerald);
+}
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: var(--c-text-main);
+  transition: var(--smooth);
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--c-emerald);
+}
+
+.nav-link.active {
+  color: var(--c-emerald);
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--c-emerald);
+  border-radius: 4px;
+}
+
+.nav-donate-btn {
+  margin-left: 1rem;
+}
+
+.mobile-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--c-deep-green);
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-nav { display: none; }
+  .mobile-toggle { display: block; }
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem;
+    gap: 1rem;
+    box-shadow: var(--shadow-md);
+    border-top: 1px solid var(--c-soft-mint);
+  }
+  .mobile-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--c-soft-mint);
+  }
+  .mobile-donate-btn {
+    margin-top: 1rem;
+    justify-content: center;
+  }
+}

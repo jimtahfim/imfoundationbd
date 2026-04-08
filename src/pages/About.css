@@ -1,0 +1,75 @@
+/* About.css */
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.about-text h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--c-deep-green);
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--c-text-muted);
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+}
+
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.mv-card {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--c-bg-subtle);
+  transition: var(--smooth);
+}
+
+.mv-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--c-emerald);
+}
+
+.mv-icon {
+  color: var(--c-emerald);
+  margin-bottom: 1.5rem;
+}
+
+.mv-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.mv-card p {
+  color: var(--c-text-muted);
+}
+
+@media (max-width: 968px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mission-vision-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "regular",
+    "title": "নিয়মিত দাতা",
+    "description": "প্রতি মাসে নির্দিষ্ট পরিমাণ অর্থ অনুদান দিয়ে আমাদের স্থায়ী কার্যক্রমে অংশীদার হোন।",
+    "icon": "CalendarHeart",
+    "isPrimary": true,
+    "url": "/donate"
+  },
+  {
+    "id": "lifetime",
+    "title": "আজীবন ও দাতা সদস্য",
+    "description": "এককালীন বড় অনুদানের মাধ্যমে আজীবন সদস্যপদ গ্রহণ করুন।",
+    "icon": "Medal",
+    "isPrimary": false,
+    "url": "/donate"
+  },
+  {
+    "id": "volunteer",
+    "title": "স্বেচ্ছাসেবক",
+    "description": "আপনার মেধা ও সময় দিয়ে মানবতার সেবায় আমাদের সাথে যুক্ত হোন।",
+    "icon": "Users",
+    "isPrimary": false,
+    "url": "/contact"
+  },
+  {
+    "id": "sponsor",
+    "title": "মেধাবী শিক্ষার্থী স্পন্সর",
+    "description": "একজন বা একাধিক এতিম/মেধাবী শিক্ষার্থীর পড়াশোনার সম্পূর্ন দায়িত্ব নিন।",
+    "icon": "GraduationCap",
+    "isPrimary": false,
+    "url": "/donate"
+  }
+]

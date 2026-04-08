@@ -1,0 +1,29 @@
+/* StatCard.css */
+.stat-card {
+  background-color: var(--c-bg-light);
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--c-bg-subtle);
+  transition: var(--smooth);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--c-soft-mint);
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  color: var(--c-emerald);
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.stat-label {
+  color: var(--c-deep-green);
+  font-weight: 600;
+  font-size: 1.1rem;
+}

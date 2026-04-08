@@ -1,0 +1,32 @@
+/* SectionHeader.css */
+.section-header {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.section-header.centered {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sh-title {
+  font-size: 2.2rem;
+  color: var(--c-deep-green);
+  margin-bottom: 0.5rem;
+}
+
+.sh-subtitle {
+  font-size: 1.1rem;
+  color: var(--c-text-muted);
+  max-width: 600px;
+  margin-bottom: 1rem;
+}
+
+.sh-divider {
+  width: 60px;
+  height: 4px;
+  background-color: var(--c-emerald);
+  border-radius: 4px;
+}
