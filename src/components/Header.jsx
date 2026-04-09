@@ -40,8 +40,8 @@ const Header = () => {
       <nav className={`main-nav ${isScrolled ? 'scrolled glass shadow' : ''}`}>
         <div className="container nav-inner">
           <Link to="/" className="logo-brand">
-            <div className="logo-icon"><Heart size={24} color="#f8fafc" /></div>
-            <span className="brand-name">IMF<span className="brand-accent">bd</span></span>
+            <img src="/images/logo.png" alt="IMFbd Logo" className="header-logo-img" />
+            <span className="brand-name">{siteSettings.siteName}</span>
           </Link>
 
           {/* Desktop Links */}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Heart, ArrowRight } from 'lucide-react';
+import Typewriter from './Typewriter';
 import './Hero.css';
 
 const Hero = () => {
@@ -10,8 +11,16 @@ const Hero = () => {
       <div className="container hero-content">
         <div className="hero-text animate-fade-in">
           <h1 className="hero-title">
-            সাহায্যের হাত বাড়িয়ে দিন <span>মানবতার কল্যাণে</span>
+            ইকরামুল মুসলিমিন <br className="hidden-mobile" />
+            <span className="hero-highlight">ফাউন্ডেশন</span>
+            <Typewriter 
+              words={['মানবতার সেবায়', 'আপনাদের পাশে', 'সুন্দর সমাজ গঠনে']} 
+              typingSpeed={100} 
+              deletingSpeed={50} 
+              pauseDuration={2000} 
+            />
           </h1>
+
           <p className="hero-subtitle">
             আপনার একটি ছোট অনুদান একটি পরিবারের মুখে হাসি ফোটাতে পারে। আমরা বিশ্বাস করি, একসাথে কাজ করলে একটি সুন্দর সমাজ গঠন সম্ভব।
           </p>

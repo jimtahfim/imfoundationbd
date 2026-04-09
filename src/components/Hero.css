@@ -36,9 +36,9 @@
   margin-bottom: 1.5rem;
 }
 
-.hero-title span {
+.hero-highlight {
   color: var(--c-emerald);
-  display: block;
+  display: inline-block;
 }
 
 .hero-subtitle {
