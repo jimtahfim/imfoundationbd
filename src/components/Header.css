@@ -63,23 +63,17 @@
   gap: 0.5rem;
 }
 
-.logo-icon {
-  background: var(--c-emerald);
-  border-radius: 8px;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.header-logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
 }
 
 .brand-name {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: var(--c-deep-green);
-}
-.brand-accent {
-  color: var(--c-emerald);
+  white-space: nowrap;
 }
 
 .desktop-nav {

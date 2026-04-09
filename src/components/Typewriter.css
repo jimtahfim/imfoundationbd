@@ -1,0 +1,29 @@
+.typewriter-container {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.5rem;
+  color: var(--c-gold); /* Make it eye-catchy compared to the rest of the green text */
+  font-weight: 700;
+  position: relative;
+  white-space: nowrap;
+}
+
+.typewriter-text {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--c-emerald) 0%, var(--c-gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  font-weight: 400;
+  color: var(--c-emerald);
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

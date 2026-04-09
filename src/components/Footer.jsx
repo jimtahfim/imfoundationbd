@@ -10,8 +10,7 @@ const Footer = () => {
       <div className="container footer-inner">
         <div className="footer-brand">
           <Link to="/" className="footer-logo">
-            <Heart size={28} color="#10b981" />
-            <span>IMFbd</span>
+            <img src="/images/logo.png" alt="IMFbd Logo" className="footer-logo-img" />
           </Link>
           <p className="footer-desc">
             {siteSettings.tagline}. আমরা কাজ করছি সুবিধাবঞ্চিত মানুষের জীবনমান উন্নয়নে।

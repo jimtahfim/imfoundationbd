@@ -1,5 +1,5 @@
 {
-  "siteName": "Ikramul Muslimin Foundation",
+  "siteName": "ইকরামুল মুসলিমিন ফাউন্ডেশন",
   "tagline": "মানবতার সেবায় একটি বিশ্বস্ত নাম",
   "contact": {
     "phone": "+8801714442745",
@@ -15,10 +15,24 @@
     "telegram": "https://t.me",
     "whatsapp": "https://wa.me"
   },
-  "overallVideo": {
-    "thumbnailUrl": "/images/video_thumb.png",
-    "videoUrl": "https://www.youtube.com/embed/buBvqw6G3WU?si=b9PvhXTkyQElY4uY",
-    "title": "আমাদের সামগ্রিক কার্যক্রম",
-    "description": "ইকরামুল মুসলিমিন ফাউন্ডেশন মানুষের মৌলিক অধিকার নিশ্চিত করতে, শিক্ষা, চিকিৎসা ও জরুরি ত্রাণ সহায়তা প্রদান করে আসছে।"
-  }
+  "overallVideos": [
+    {
+      "id": "1",
+      "videoUrl": "https://www.youtube.com/embed/buBvqw6G3WU?si=b9PvhXTkyQElY4uY",
+      "title": "আমাদের সামগ্রিক কার্যক্রম (Part 1)",
+      "description": "ইকরামুল মুসলিমিন ফাউন্ডেশন মানুষের মৌলিক অধিকার নিশ্চিত করতে, শিক্ষা, চিকিৎসা ও জরুরি ত্রাণ সহায়তা প্রদান করে আসছে।"
+    },
+    {
+      "id": "2",
+      "videoUrl": "https://www.youtube.com/embed/buBvqw6G3WU?si=b9PvhXTkyQElY4uY",
+      "title": "আমাদের সামগ্রিক কার্যক্রম (Part 2)",
+      "description": "ইকরামুল মুসলিমিন ফাউন্ডেশনের অন্যতম লক্ষ্য হলো সমাজের সুবিধাবঞ্চিত মানুষের পাশে দাঁড়ানো।"
+    },
+    {
+      "id": "3",
+      "videoUrl": "https://www.youtube.com/embed/buBvqw6G3WU?si=b9PvhXTkyQElY4uY",
+      "title": "আমাদের সামগ্রিক কার্যক্রম (Part 3)",
+      "description": "শিক্ষা ও চিকিৎসা ক্ষেত্রে আমাদের নানামুখী উদ্যোগ ও কার্যক্রম সম্পর্কে জানুন।"
+    }
+  ]
 }

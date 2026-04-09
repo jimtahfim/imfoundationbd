@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { BookOpen, RefreshCcw, HeartHandshake, Mic } from 'lucide-react';
+import { BookOpen, RefreshCcw, HeartHandshake, Mic, ChevronLeft, ChevronRight } from 'lucide-react';
 import Hero from '../components/Hero';
 import StatCard from '../components/StatCard';
 import SectionHeader from '../components/SectionHeader';
@@ -16,7 +16,18 @@ import './Home.css';
 const Home = () => {
   const latestActivities = activitiesData.slice(0, 3);
   const homeGallery = galleryData.slice(0, 4);
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
+  const handlePrevVideo = () => {
+    setCurrentVideoIndex((prev) => (prev === 0 ? siteSettings.overallVideos.length - 1 : prev - 1));
+  };
+
+  const handleNextVideo = () => {
+    setCurrentVideoIndex((prev) => (prev === siteSettings.overallVideos.length - 1 ? 0 : prev + 1));
+  };
+
+  const currentVideo = siteSettings.overallVideos[currentVideoIndex];
+  
   return (
     <div className="home-page">
       <Hero />
@@ -88,21 +99,40 @@ const Home = () => {
         <div className="container">
           <SectionHeader 
             title="এক নজরে আমাদের কার্যক্রম" 
-            subtitle={siteSettings.overallVideo.description}
+            subtitle={currentVideo ? currentVideo.description : ''}
             centered
           />
-          <div className="video-container glass">
-            <div className="video-wrapper">
-              <iframe 
-                src={siteSettings.overallVideo.videoUrl} 
-                title="এক নজরে আমাদের কার্যক্রম" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
+          {currentVideo && (
+            <div className="video-slider-container">
+              <div className="video-container glass">
+                <div className="video-wrapper">
+                  <iframe 
+                    key={currentVideo.id}
+                    src={currentVideo.videoUrl} 
+                    title={currentVideo.title} 
+                    frameBorder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+              
+              {siteSettings.overallVideos.length > 1 && (
+                <div className="video-slider-controls">
+                  <button className="slider-btn prev" onClick={handlePrevVideo} aria-label="Previous Video">
+                    <ChevronLeft size={24} />
+                  </button>
+                  <div className="video-title">
+                    <h4>{currentVideo.title}</h4>
+                  </div>
+                  <button className="slider-btn next" onClick={handleNextVideo} aria-label="Next Video">
+                    <ChevronRight size={24} />
+                  </button>
+                </div>
+              )}
             </div>
-          </div>
+          )}
         </div>
       </section>
 
