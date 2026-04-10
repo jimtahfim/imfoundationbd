@@ -66,6 +66,9 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="container">
           <p>&copy; {new Date().getFullYear()} {siteSettings.siteName}. সর্বস্বত্ব সংরক্ষিত।</p>
+          <p className="footer-developer">
+            উন্নয়নে <Heart size={16} className="pulsating-heart" /> IMFbd টিম
+          </p>
         </div>
       </div>
     </footer>

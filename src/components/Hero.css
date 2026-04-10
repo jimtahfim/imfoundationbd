@@ -1,9 +1,16 @@
 /* Hero.css */
 .hero-section {
   position: relative;
-  padding: 6rem 0;
+  min-height: calc(100vh - 115px);
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
   background-color: var(--c-soft-mint);
   overflow: hidden;
+}
+
+.hero-section > .container {
+  width: 100%;
 }
 
 .hero-pattern {
@@ -67,7 +74,7 @@
   border-radius: 20px;
   box-shadow: var(--shadow-lg);
   object-fit: cover;
-  height: 450px;
+  height: 600px;
 }
 
 .hero-stat-float {
