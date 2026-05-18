@@ -1,0 +1,565 @@
+{
+  "site": "IMF",
+  "locale": "bn",
+  "schema_version": "1.0.0",
+  "categories": [
+    {
+      "id": "education",
+      "name_bn": "শিক্ষা",
+      "slug": "education",
+      "children": [
+        {
+          "id": "child-education",
+          "name_bn": "শিশু শিক্ষা",
+          "slug": "child-education",
+          "children": [
+            {
+              "id": "quran-islamic-education",
+              "name_bn": "কুরআন ও ইসলামী শিক্ষা",
+              "slug": "quran-islamic-education",
+              "children": []
+            },
+            {
+              "id": "islamic-etiquette-moral-education",
+              "name_bn": "ইসলামী শিষ্টাচার ও নৈতিক শিক্ষা",
+              "slug": "islamic-etiquette-moral-education",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "adult-education",
+          "name_bn": "বয়স্ক শিক্ষা",
+          "slug": "adult-education",
+          "children": []
+        },
+        {
+          "id": "islam-in-daily-life",
+          "name_bn": "দৈনন্দিন জীবনে ইসলাম",
+          "slug": "islam-in-daily-life",
+          "children": []
+        },
+        {
+          "id": "farz-e-ain-education",
+          "name_bn": "ফরজে আইন ইলম শিক্ষা",
+          "slug": "farz-e-ain-education",
+          "children": []
+        },
+        {
+          "id": "halal-haram",
+          "name_bn": "হালাল - হারাম",
+          "slug": "halal-haram",
+          "children": []
+        },
+        {
+          "id": "questions-solutions",
+          "name_bn": "জিজ্ঞাসা - সমাধান",
+          "slug": "questions-solutions",
+          "children": []
+        },
+        {
+          "id": "afternoon-school",
+          "name_bn": "আফটারনুন স্কুল",
+          "slug": "afternoon-school",
+          "children": []
+        },
+        {
+          "id": "seminar",
+          "name_bn": "সেমিনার",
+          "slug": "seminar",
+          "children": []
+        },
+        {
+          "id": "library",
+          "name_bn": "লাইব্রেরি",
+          "slug": "library",
+          "children": [
+            {
+              "id": "free-pdf",
+              "name_bn": "ফ্রি পিডিএফ",
+              "slug": "free-pdf",
+              "children": []
+            },
+            {
+              "id": "article",
+              "name_bn": "প্রবন্ধ",
+              "slug": "article",
+              "children": []
+            },
+            {
+              "id": "essay",
+              "name_bn": "নিবন্ধ",
+              "slug": "essay",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "competition-talent-development",
+      "name_bn": "প্রতিযোগিতা ও মেধা বিকাশ",
+      "slug": "competition-talent-development",
+      "children": [
+        {
+          "id": "quran-competition",
+          "name_bn": "কুরআন প্রতিযোগিতা",
+          "slug": "quran-competition",
+          "children": []
+        },
+        {
+          "id": "adult-quran-competition",
+          "name_bn": "বয়স্কদের কুরআন প্রতিযোগিতা",
+          "slug": "adult-quran-competition",
+          "children": []
+        },
+        {
+          "id": "hifzul-hadith-competition",
+          "name_bn": "হিফজুল হাদীস প্রতিযোগিতা",
+          "slug": "hifzul-hadith-competition",
+          "children": []
+        },
+        {
+          "id": "school-college-quran-competition",
+          "name_bn": "স্কুল কলেজ শিক্ষার্থীদের কুরআন প্রতিযোগিতা",
+          "slug": "school-college-quran-competition",
+          "children": []
+        },
+        {
+          "id": "school-college-quiz-competition",
+          "name_bn": "স্কুল কলেজ শিক্ষার্থীদের কুইজ প্রতিযোগিতা",
+          "slug": "school-college-quiz-competition",
+          "children": []
+        },
+        {
+          "id": "maktab-student-competition",
+          "name_bn": "মকতব শিক্ষার্থীদের প্রতিযোগিতা",
+          "slug": "maktab-student-competition",
+          "children": []
+        },
+        {
+          "id": "hamd-naat-competition",
+          "name_bn": "হামদ - নাত প্রতিযোগিতা",
+          "slug": "hamd-naat-competition",
+          "children": []
+        },
+        {
+          "id": "seerat-competition",
+          "name_bn": "সিরাত প্রতিযোগিতা",
+          "slug": "seerat-competition",
+          "children": []
+        },
+        {
+          "id": "dua-masail-competition",
+          "name_bn": "দুআ ও মাসায়েল প্রতিযোগিতা",
+          "slug": "dua-masail-competition",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "dawah-publicity",
+      "name_bn": "দাওয়াহ ও প্রচার কার্যক্রম",
+      "slug": "dawah-publicity",
+      "children": [
+        {
+          "id": "authentic-iman-aqeedah-publicity",
+          "name_bn": "সহীহ ঈমান ও আকীদার প্রচার",
+          "slug": "authentic-iman-aqeedah-publicity",
+          "children": []
+        },
+        {
+          "id": "islamic-knowledge-publicity",
+          "name_bn": "ইসলামী জ্ঞান প্রচার",
+          "slug": "islamic-knowledge-publicity",
+          "children": []
+        },
+        {
+          "id": "book-publication-distribution",
+          "name_bn": "বই ও প্রকাশনা বিতরণ",
+          "slug": "book-publication-distribution",
+          "children": []
+        },
+        {
+          "id": "leaflet-publicity-material-distribution",
+          "name_bn": "লিফলেট ও প্রচারপত্র বিতরণ",
+          "slug": "leaflet-publicity-material-distribution",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "service",
+      "name_bn": "সেবা",
+      "slug": "service",
+      "children": [
+        {
+          "id": "support-for-meritorious-students",
+          "name_bn": "মেধাবী শিক্ষার্থীদের সহায়তা",
+          "slug": "support-for-meritorious-students",
+          "children": [
+            {
+              "id": "student-scholarship",
+              "name_bn": "মেধাবী ছাত্রদের উপবৃত্তি প্রদান",
+              "slug": "student-scholarship",
+              "children": []
+            },
+            {
+              "id": "student-reception",
+              "name_bn": "কৃতি শিক্ষার্থীদের সংবর্ধনা প্রদান",
+              "slug": "student-reception",
+              "children": []
+            },
+            {
+              "id": "educational-materials",
+              "name_bn": "শিক্ষাসামগ্রী প্রদান",
+              "slug": "educational-materials",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "social-humanitarian-service",
+          "name_bn": "সামাজিক সেবা ও মানবিক কার্যক্রম",
+          "slug": "social-humanitarian-service",
+          "children": [
+            {
+              "id": "relief-distribution",
+              "name_bn": "ত্রাণ বিতরণ",
+              "slug": "relief-distribution",
+              "children": []
+            },
+            {
+              "id": "support-for-poor-needy",
+              "name_bn": "গরীব - অসহায় দুঃস্থদের সহায়তা প্রদান",
+              "slug": "support-for-poor-needy",
+              "children": []
+            },
+            {
+              "id": "support-for-orphans-widows",
+              "name_bn": "এতিম-বিধবাদের সহায়তা প্রদান",
+              "slug": "support-for-orphans-widows",
+              "children": []
+            },
+            {
+              "id": "guardian-support",
+              "name_bn": "অভিভাবকদের সহায়তা প্রদান",
+              "slug": "guardian-support",
+              "children": []
+            },
+            {
+              "id": "sports-cultural-social-competition",
+              "name_bn": "স্পোর্টস, সাংস্কৃতিক ও সামাজিক প্রতিযোগিতা",
+              "slug": "sports-cultural-social-competition",
+              "children": []
+            },
+            {
+              "id": "winter-clothes-distribution",
+              "name_bn": "শীতবস্ত্র বিতরণ",
+              "slug": "winter-clothes-distribution",
+              "children": []
+            },
+            {
+              "id": "medical-service",
+              "name_bn": "চিকিৎসা প্রদান",
+              "slug": "medical-service",
+              "children": []
+            },
+            {
+              "id": "blood-bank-health-support",
+              "name_bn": "ব্লাড ব্যাংক ও স্বাস্থ্য সহায়তা",
+              "slug": "blood-bank-health-support",
+              "children": []
+            },
+            {
+              "id": "environment-development",
+              "name_bn": "পরিবেশ উন্নয়ন",
+              "slug": "environment-development",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "khidmat-employment",
+          "name_bn": "খেদমত ও কর্মসংস্থান",
+          "slug": "khidmat-employment",
+          "children": [
+            {
+              "id": "khidmat-opportunity-provider",
+              "name_bn": "দ্বীনি খেদমতের সুযোগ প্রদানকারী",
+              "slug": "khidmat-opportunity-provider",
+              "children": []
+            },
+            {
+              "id": "khidmat-seeker",
+              "name_bn": "দ্বীনি খেদমত প্রত্যাশী",
+              "slug": "khidmat-seeker",
+              "children": [
+                {
+                  "id": "madrasah-based",
+                  "name_bn": "মাদরাসা কেন্দ্রিক",
+                  "slug": "madrasah-based",
+                  "children": [
+                    {
+                      "id": "nurani-section",
+                      "name_bn": "নূরানী বিভাগ",
+                      "slug": "nurani-section",
+                      "children": []
+                    },
+                    {
+                      "id": "maktab-section",
+                      "name_bn": "মকতব বিভাগ",
+                      "slug": "maktab-section",
+                      "children": []
+                    },
+                    {
+                      "id": "nazera-section",
+                      "name_bn": "নাযেরা বিভাগ",
+                      "slug": "nazera-section",
+                      "children": []
+                    },
+                    {
+                      "id": "hifz-section",
+                      "name_bn": "হিফয বিভাগ",
+                      "slug": "hifz-section",
+                      "children": []
+                    },
+                    {
+                      "id": "kitab-section",
+                      "name_bn": "কিতাব বিভাগ",
+                      "slug": "kitab-section",
+                      "children": []
+                    },
+                    {
+                      "id": "gatekeeper",
+                      "name_bn": "গেটম্যান",
+                      "slug": "gatekeeper",
+                      "children": []
+                    },
+                    {
+                      "id": "cook",
+                      "name_bn": "বাবুর্চি",
+                      "slug": "cook",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "mosque-based",
+                  "name_bn": "মসজিদ কেন্দ্রিক",
+                  "slug": "mosque-based",
+                  "children": [
+                    {
+                      "id": "khatib",
+                      "name_bn": "খতিব",
+                      "slug": "khatib",
+                      "children": []
+                    },
+                    {
+                      "id": "imam",
+                      "name_bn": "ইমাম",
+                      "slug": "imam",
+                      "children": []
+                    },
+                    {
+                      "id": "muazzin",
+                      "name_bn": "মুয়াজ্জিন",
+                      "slug": "muazzin",
+                      "children": []
+                    },
+                    {
+                      "id": "khadem",
+                      "name_bn": "খাদেম",
+                      "slug": "khadem",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "administrative-office",
+                  "name_bn": "প্রশাসনিক বা দাপ্তরিক",
+                  "slug": "administrative-office",
+                  "children": [
+                    {
+                      "id": "accountant",
+                      "name_bn": "হিসাব রক্ষক",
+                      "slug": "accountant",
+                      "children": []
+                    },
+                    {
+                      "id": "computer-operator",
+                      "name_bn": "কম্পিউটার অপারেটর",
+                      "slug": "computer-operator",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "self-purification-tazkiyah",
+      "name_bn": "আত্মশুদ্ধি - তাযকিয়া",
+      "slug": "self-purification-tazkiyah",
+      "children": [
+        {
+          "id": "islahi-mahfil",
+          "name_bn": "ইসলাহী মাহফিল",
+          "slug": "islahi-mahfil",
+          "children": []
+        },
+        {
+          "id": "diseases-of-heart-remedies",
+          "name_bn": "অন্তরের ব্যাধি ও তার প্রতিকার",
+          "slug": "diseases-of-heart-remedies",
+          "children": []
+        },
+        {
+          "id": "good-character-qualities",
+          "name_bn": "উত্তম চরিত্র ও গুণাবলী",
+          "slug": "good-character-qualities",
+          "children": []
+        },
+        {
+          "id": "muhasabah-self-accountability",
+          "name_bn": "মুহাসাবা বা আত্মসমালোচনা",
+          "slug": "muhasabah-self-accountability",
+          "children": []
+        },
+        {
+          "id": "tawbah-istighfar",
+          "name_bn": "তওবা-ইস্তেগফার",
+          "slug": "tawbah-istighfar",
+          "children": []
+        },
+        {
+          "id": "zikr-azkar-dua",
+          "name_bn": "যিকির-আযকার ও দুআ",
+          "slug": "zikr-azkar-dua",
+          "children": [
+            {
+              "id": "morning-evening-amal",
+              "name_bn": "সকাল সন্ধ্যার আমল",
+              "slug": "morning-evening-amal",
+              "children": []
+            },
+            {
+              "id": "beloved-sunnah-of-prophet",
+              "name_bn": "প্রিয় নবীর প্রিয় সুন্নাত",
+              "slug": "beloved-sunnah-of-prophet",
+              "children": []
+            },
+            {
+              "id": "bidah-superstition",
+              "name_bn": "বিদআত ও কুসংস্কার",
+              "slug": "bidah-superstition",
+              "children": []
+            },
+            {
+              "id": "biography-of-islamic-scholars",
+              "name_bn": "ইসলামী মনীষীদের জীবনী",
+              "slug": "biography-of-islamic-scholars",
+              "children": []
+            },
+            {
+              "id": "avoidance-of-sins",
+              "name_bn": "গুনাহ বর্জন",
+              "slug": "avoidance-of-sins",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "islamic-marriage",
+      "name_bn": "ইসলামিক ম্যারেজ",
+      "slug": "islamic-marriage",
+      "children": [
+        {
+          "id": "groom",
+          "name_bn": "পাত্র",
+          "slug": "groom",
+          "children": []
+        },
+        {
+          "id": "bride",
+          "name_bn": "পাত্রী",
+          "slug": "bride",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "technical-skill-development",
+      "name_bn": "কারিগরি ও দক্ষতা উন্নয়ন",
+      "slug": "technical-skill-development",
+      "children": [
+        {
+          "id": "technical-training",
+          "name_bn": "কারিগরি প্রশিক্ষণ প্রদান",
+          "slug": "technical-training",
+          "children": []
+        },
+        {
+          "id": "computer-basic-it-training",
+          "name_bn": "কম্পিউটার ও বেসিক আইটি প্রশিক্ষণ",
+          "slug": "computer-basic-it-training",
+          "children": []
+        },
+        {
+          "id": "ict-service",
+          "name_bn": "আইসিটি (ICT) সেবা",
+          "slug": "ict-service",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "donation",
+      "name_bn": "ডোনেশন",
+      "slug": "donation",
+      "children": [
+        {
+          "id": "regular-donation",
+          "name_bn": "নিয়মিত অনুদান",
+          "slug": "regular-donation",
+          "children": []
+        },
+        {
+          "id": "zakat-fund",
+          "name_bn": "যাকাত তহবিল",
+          "slug": "zakat-fund",
+          "children": []
+        },
+        {
+          "id": "sadaqah-jariyah-fund",
+          "name_bn": "সদকায়ে জারিয়া তহবিল",
+          "slug": "sadaqah-jariyah-fund",
+          "children": []
+        },
+        {
+          "id": "sponsor-meritorious-student",
+          "name_bn": "মেধাবী শিক্ষার্থী স্পন্সর",
+          "slug": "sponsor-meritorious-student",
+          "children": []
+        },
+        {
+          "id": "skill-development",
+          "name_bn": "স্কিল ডেভেলপমেন্ট",
+          "slug": "skill-development",
+          "children": []
+        },
+        {
+          "id": "self-reliance-fund",
+          "name_bn": "স্বাবলম্বীকরণ তহবিল",
+          "slug": "self-reliance-fund",
+          "children": []
+        }
+      ]
+    }
+  ]
+}

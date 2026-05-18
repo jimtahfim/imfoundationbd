@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Heart, Mail, Phone, MapPin } from 'lucide-react';
+import { Heart, Mail, Phone, MapPin, ShieldCheck } from 'lucide-react';
 import siteSettings from '../data/siteSettings.json';
 import './Footer.css';
 
@@ -31,6 +31,9 @@ const Footer = () => {
             <a href={siteSettings.socialUrls.twitter} target="_blank" rel="noreferrer" className="social-icon" title="Twitter">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
             </a>
+            <Link to="/admin" className="social-icon" title="Admin">
+              <ShieldCheck size={20} />
+            </Link>
           </div>
         </div>
 

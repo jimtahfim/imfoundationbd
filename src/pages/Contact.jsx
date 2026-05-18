@@ -1,10 +1,16 @@
 import React from 'react';
 import SectionHeader from '../components/SectionHeader';
-import { Phone, Mail, MapPin, Send } from 'lucide-react';
+import { MessageCircle, Phone, Mail, MapPin, Send } from 'lucide-react';
 import siteSettings from '../data/siteSettings.json';
 import './Contact.css';
 
 const Contact = () => {
+  const whatsappMessage = 'আসসালামু আলাইকুম। আমি ইকরামুল মুসলিমিন ফাউন্ডেশনের কার্যক্রম সম্পর্কে জানতে চাই।';
+  const telegramMessage = 'আসসালামু আলাইকুম। আমি ইকরামুল মুসলিমিন ফাউন্ডেশনের সাথে যোগাযোগ করতে চাই।';
+  const whatsappNumber = siteSettings.contact.whatsapp.replace(/\D/g, '');
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+  const telegramUrl = `https://t.me/+${whatsappNumber}`;
+
   return (
     <div className="contact-page py-16">
       <div className="container">
@@ -40,6 +46,23 @@ const Contact = () => {
             <div className="info-card bg-emerald-light">
               <h4>অফিস সময়:</h4>
               <p>{siteSettings.contact.workingHours}</p>
+            </div>
+
+            <div className="quick-contact-grid">
+              <a href={whatsappUrl} target="_blank" rel="noreferrer" className="quick-contact-card whatsapp">
+                <span className="quick-contact-icon"><MessageCircle size={24} /></span>
+                <span>
+                  <strong>হোয়াটসঅ্যাপ যোগাযোগ</strong>
+                  <small>{whatsappMessage}</small>
+                </span>
+              </a>
+              <a href={telegramUrl} target="_blank" rel="noreferrer" className="quick-contact-card telegram">
+                <span className="quick-contact-icon"><Send size={24} /></span>
+                <span>
+                  <strong>টেলিগ্রাম যোগাযোগ</strong>
+                  <small>{telegramMessage}</small>
+                </span>
+              </a>
             </div>
           </div>
 

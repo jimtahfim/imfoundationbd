@@ -43,6 +43,36 @@
 .w-full {
   width: 100%;
 }
+
+.donate-page .funds-grid {
+  align-items: stretch;
+}
+
+.donate-page .fund-card {
+  min-height: 214px;
+  display: flex;
+  flex-direction: column;
+}
+
+.donate-page .fund-card h4 {
+  font-size: 1.05rem;
+  color: var(--c-deep-green);
+  margin-bottom: 0.45rem;
+}
+
+.donate-page .fund-card p {
+  flex: 1;
+  margin-bottom: 1.25rem;
+}
+
+.donate-page .fund-card .btn {
+  margin-top: auto;
+  align-self: flex-start;
+  width: auto;
+  min-width: 218px;
+  white-space: nowrap;
+}
+
 .text-deep-green {
   color: var(--c-deep-green);
 }
@@ -54,4 +84,11 @@
 
 @media (max-width: 968px) {
   .donate-methods-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .donate-page .fund-card .btn {
+    width: 100%;
+    min-width: 0;
+  }
 }

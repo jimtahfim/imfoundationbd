@@ -159,6 +159,9 @@
   padding: 1.5rem;
   border-radius: 12px;
   border-left: 4px solid var(--c-emerald);
+  display: flex;
+  flex-direction: column;
+  min-height: 212px;
 }
 
 .fund-card h3 {
@@ -170,6 +173,7 @@
   font-size: 0.9rem;
   color: var(--c-text-muted);
   margin-bottom: 1rem;
+  flex: 1;
 }
 
 .btn-link {
@@ -177,6 +181,8 @@
   font-weight: 600;
   font-size: 0.95rem;
   transition: var(--smooth);
+  margin-top: auto;
+  align-self: flex-start;
 }
 .btn-link:hover {
   color: var(--c-deep-green);

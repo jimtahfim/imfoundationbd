@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "education",
+    "name_bn": "শিক্ষা",
+    "beneficiaries": 5000
+  },
+  {
+    "slug": "competition-talent-development",
+    "name_bn": "প্রতিযোগিতা ও মেধা বিকাশ",
+    "beneficiaries": 1200
+  },
+  {
+    "slug": "dawah-publicity",
+    "name_bn": "দাওয়াহ ও প্রচার কার্যক্রম",
+    "beneficiaries": 8000
+  },
+  {
+    "slug": "service",
+    "name_bn": "সেবা",
+    "beneficiaries": 15000
+  },
+  {
+    "slug": "self-purification-tazkiyah",
+    "name_bn": "আত্মশুদ্ধি - তাযকিয়া",
+    "beneficiaries": 3000
+  },
+  {
+    "slug": "islamic-marriage",
+    "name_bn": "ইসলামিক ম্যারেজ",
+    "beneficiaries": 250
+  },
+  {
+    "slug": "technical-skill-development",
+    "name_bn": "কারিগরি ও দক্ষতা উন্নয়ন",
+    "beneficiaries": 450
+  },
+  {
+    "slug": "donation",
+    "name_bn": "ডোনেশন",
+    "beneficiaries": 12000
+  }
+]
