@@ -6,16 +6,21 @@ import StatCard from '../components/StatCard';
 import SectionHeader from '../components/SectionHeader';
 import ActivityCard from '../components/ActivityCard';
 import statsData from '../data/stats.json';
-import activitiesData from '../data/activities.json';
+import categoryData from '../data/imf_categories_react.json';
+import categoryBeneficiaries from '../data/categoryBeneficiaries.json';
+import { categoryImages } from '../data/categoryPresentation';
 import siteSettings from '../data/siteSettings.json';
-import galleryData from '../data/gallery.json';
 import supportOptions from '../data/supportOptions.json';
 import donationFunds from '../data/donationFunds.json';
+import { getCategoryName, toBanglaNumber } from '../utils/categoryTree';
 import './Home.css';
 
+const getBeneficiaryCount = (slug) => (
+  categoryBeneficiaries.find((item) => item.slug === slug)?.beneficiaries || 0
+);
+
 const Home = () => {
-  const latestActivities = activitiesData.slice(0, 3);
-  const homeGallery = galleryData.slice(0, 4);
+  const activityCategories = (categoryData.categories || []).filter((category) => category.slug !== 'donation');
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
   const handlePrevVideo = () => {
@@ -84,9 +89,23 @@ const Home = () => {
             subtitle="আমাদের নিয়মিত সেবা ও উন্নয়নমূলক কাজ সম্পর্কে জানুন।"
           />
           <div className="activities-grid">
-            {latestActivities.map(activity => (
-              <ActivityCard key={activity.id} activity={activity} />
-            ))}
+            {activityCategories.map(category => {
+              const activity = {
+                id: category.id,
+                title: getCategoryName(category),
+                summary: `${toBanglaNumber(getBeneficiaryCount(category.slug))}+ জন উপকারভোগী এই কার্যক্রমের মাধ্যমে সেবা পেয়েছেন।`,
+                image: categoryImages[category.slug] || '/images/hero_main.png',
+                category: category.children?.length > 0 ? `${toBanglaNumber(category.children.length)} উপ-কার্যক্রম` : '',
+              };
+
+              return (
+                <ActivityCard
+                  key={category.id}
+                  activity={activity}
+                  to={`/activities/${category.slug}`}
+                />
+              );
+            })}
           </div>
           <div className="text-center mt-4">
             <Link to="/activities" className="btn btn-secondary">সব কার্যক্রম দেখুন</Link>

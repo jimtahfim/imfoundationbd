@@ -52,6 +52,69 @@
   display: block;
 }
 
+.quick-contact-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.quick-contact-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.25rem;
+  border-radius: 14px;
+  background: white;
+  border: 1px solid var(--c-bg-subtle);
+  box-shadow: var(--shadow-sm);
+  transition: var(--smooth);
+}
+
+.quick-contact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.quick-contact-card.whatsapp {
+  border-color: rgba(16, 185, 129, 0.24);
+}
+
+.quick-contact-card.telegram {
+  border-color: rgba(14, 165, 233, 0.24);
+}
+
+.quick-contact-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+.quick-contact-card.whatsapp .quick-contact-icon {
+  background: #10b981;
+}
+
+.quick-contact-card.telegram .quick-contact-icon {
+  background: #0ea5e9;
+}
+
+.quick-contact-card strong {
+  display: block;
+  color: var(--c-deep-green);
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+}
+
+.quick-contact-card small {
+  display: block;
+  color: var(--c-text-muted);
+  line-height: 1.5;
+}
+
 .contact-form-container {
   padding: 3rem;
   border-radius: 16px;

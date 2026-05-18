@@ -12,9 +12,10 @@ const Typewriter = ({ words, typingSpeed = 150, deletingSpeed = 100, pauseDurati
 
     if (isDeleting) {
       if (currentText === '') {
-        setIsDeleting(false);
-        setCurrentWordIndex((prev) => (prev + 1) % words.length);
-        timer = setTimeout(() => {}, typingSpeed);
+        timer = setTimeout(() => {
+          setIsDeleting(false);
+          setCurrentWordIndex((prev) => (prev + 1) % words.length);
+        }, typingSpeed);
       } else {
         timer = setTimeout(() => {
           setCurrentText(currentWord.substring(0, currentText.length - 1));

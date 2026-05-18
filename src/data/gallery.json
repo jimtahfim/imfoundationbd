@@ -21,12 +21,17 @@
   },
   {
     "id": 5,
-    "url": "/images/food.png",
+    "url": "/images/food-aid.png",
     "caption": "এতিমখানায় খাবার বিতরণ"
   },
   {
     "id": 6,
     "url": "/images/sewing.png",
     "caption": "সেলাই মেশিন বিতরণ"
+  },
+  {
+    "id": 7,
+    "url": "/images/water-project.png",
+    "caption": "বিশুদ্ধ পানি প্রকল্প"
   }
 ]

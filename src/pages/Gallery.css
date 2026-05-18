@@ -208,6 +208,7 @@
 
 @media (max-width: 640px) {
   .gallery-grid-4, .gallery-grid-6 { grid-template-columns: repeat(2, 1fr); }
+  .gallery-controls { display: none; }
   .gallery-modal-image-wrapper { height: 40vh; }
 }
 
